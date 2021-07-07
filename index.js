@@ -1,12 +1,18 @@
-//sets the constant and variables 
+function makeGrid() {
+    let tbl = document.getElementById('tbl')
 
-const container = document.getElementById('container');
-let rows = document.getElementsByClassName('gridRow');
-let cells = document.getElementsByClassName('cell');
+    for (let i = 0; i < 17; i++) {
+        let myRow = document.createElement('tr');
+        myRow.id = 'row' + 1;
+        tbl.appendChild(myRow);
+        
+        let rowW = document.getElementById('row' + i);
+    for (let j = 0; j < 17; j++) {
+            let myCell = document.createElement('td');
+            rowW.appendChild(myCell);
+        }
+    }
 
-//creates a default grid of 16x16
-function defaultGrid() {
-    makeRows(16);
-    makeColumns(16);
+
+
 }
-
