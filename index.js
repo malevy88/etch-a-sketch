@@ -1,18 +1,16 @@
 function makeGrid() {
-    let tbl = document.getElementById('tbl')
+    let tbl = document.getElementById('container')
 
     for (let i = 0; i < 17; i++) {
-        let myRow = document.createElement('tr');
-        myRow.id = 'row' + 1;
-        tbl.appendChild(myRow);
-        
-        let rowW = document.getElementById('row' + i);
-    for (let j = 0; j < 17; j++) {
-            let myCell = document.createElement('td');
-            rowW.appendChild(myCell);
-        }
+        let tableRow = document.createElement('tr');
+        tableRow.id = 'row' + 1;
+        tbl.appendChild(tableRow);
+    for (let j = 0; i < 17; i++) {
+        let yourRow = document.createElement('td');
+        yourRow.id = 'row' + 1;
+        tbl.appendChild(yourRow);
     }
-
-
-
+   
+   
+    }
 }
